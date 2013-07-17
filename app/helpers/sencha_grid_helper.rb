@@ -1,0 +1,2 @@
+module SenchaGridHelper
+end
