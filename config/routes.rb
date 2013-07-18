@@ -2,7 +2,9 @@ SenchaGrid::Application.routes.draw do
   get "sencha_grid/grid"
   
   resources :users
-
+  match '/users/create',  to: 'users#create'
+  match '/users/update',  to: 'users#update'
+  match '/users/destroy', to: 'users#destroy'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
