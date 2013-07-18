@@ -1,1 +1,2 @@
-<% @first = 1 %><% @users.each do |user| %><%=(@first==1?'':',')%>{email:"<%= user.email %>",first:"<%= user.first %>",last:"<%= user.last %>"}<% @first = 0 %><% end %>
+{"success":true,"message":"Loaded data","data":<%=@users.to_json %>}
+
